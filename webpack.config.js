@@ -1,6 +1,7 @@
 var path = require('path');
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/index.jsx',
+  mode:"development",
   output: {
     path: path.resolve(__dirname, 'public/dist'),
     filename: '[name].js'
@@ -8,7 +9,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
