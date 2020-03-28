@@ -2,7 +2,9 @@
   "name": "app",
   "version": "0.1.0",
   "private": true,
-  
+  "scripts": {
+    "watch": "webpack --watch"
+  },
   "dependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-react": "^7.9.4",
@@ -12,5 +14,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.11"
   }
 }
